@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Calendar</title>
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="calendar">
+        <div class="calendar__header">
+          <button class="left" id="showPrevMonth">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <button class="right" id="showNextMonth">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </button>
+
+          <h3>Calendar</h3>
+          <h4 id="monthYear">Month and Year</h4>
+        </div>
+      </div>
+      <table class="table table-days calendar__table">
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thur</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody id="calendarDates"></tbody>
+      </table>
+    </div>
+    <div class="overlay">
+      <div class="content">
+        <button id="closeEvent" class="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="form-container">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="input-control" id="eventTitle" />
+          </div>
+          <button id="btnAddEvent">Add Event</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

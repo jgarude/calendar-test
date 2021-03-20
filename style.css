@@ -1,0 +1,152 @@
+html,
+body {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 30px auto;
+  text-align: center;
+}
+.container .calendar__header {
+  text-align: center;
+  background: #ef4f69;
+  padding: 5px 10px 10px 20px;
+  height: 70px;
+  position: relative;
+  border-top: 5px solid #ef4f69;
+  border-bottom: 1px solid #ddd;
+  color: #fff;
+}
+.container .calendar__header button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container .calendar__header .left {
+  left: 10px;
+  font-size: 20px;
+}
+.container .calendar__header .right {
+  right: 10px;
+  font-size: 20px;
+}
+.container .calendar__header h4 {
+  margin: 0px 0px;
+  font-size: 14px;
+}
+.container .calendar__table thead tr th {
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  border: 0px solid #ccc;
+  color: #ef5069;
+}
+.container .calendar__btns {
+  margin-top: 30px;
+}
+.container .calendar__btns button {
+  border: 0px;
+  background-color: #ccc;
+  padding: 10px 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table tr td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+table tr td span {
+  display: block;
+  background-color: #ef5069;
+  font-size: 11px;
+  padding: 2px 0px;
+  margin: 2px 10px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  background-color: #3333337a;
+  display: none;
+  padding: 15px;
+}
+.overlay .content {
+  width: 300px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay .content .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
+.overlay .content .form-container {
+  display: flex;
+  flex-direction: column;
+}
+.overlay .content .form-container .form-group label {
+  display: block;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.overlay .content .form-container .form-group .input-control {
+  padding: 5px;
+  height: 30px;
+  width: 220px;
+  margin-bottom: 10px;
+}
+.overlay .content .form-container button {
+  width: 100px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.show .overlay {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
